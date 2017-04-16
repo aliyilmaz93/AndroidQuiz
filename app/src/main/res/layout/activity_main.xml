@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@drawable/b11">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@mipmap/train"
+                    android:onClick="trainFunction"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/abc_activity_chooser_view_see_all"
+                    android:onClick="trainFunction"
+                    android:text="TRAİN YOURSELF"
+
+                    android:textColor="@android:color/black"
+                    android:textColorLink="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    tools:textColorLink="@android:color/black" />
+                <Button
+
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@mipmap/quiz"
+                    android:onClick="testOnClickFunction"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="QUİZ"
+                    android:textAlignment="center"
+                    android:paddingLeft="55dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:onClick="testOnClickFunction"
+                    android:fontFamily="@string/abc_activity_chooser_view_see_all"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@mipmap/add"
+                    android:onClick="addOnClickFunction"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="ADD NEW WORDS"
+                    android:onClick="addOnClickFunction"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:fontFamily="@string/abc_activity_chooser_view_see_all"/>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@mipmap/exit"
+                    android:onClick="exit"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="60dp"
+                    android:text="QUİT"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:onClick="exit"
+                    android:fontFamily="@string/abc_activity_chooser_view_see_all"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/logo" />
+
+    </RelativeLayout>
